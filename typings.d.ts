@@ -26,7 +26,7 @@ type Content = {
 
 type Results = {
   paid: any[]
-  filter: Filter[]
+  filters: Filter[]
   organic: Organic[]
   search_information: {
     query: string
@@ -36,7 +36,7 @@ type Results = {
 
 type Filter = {
   name: string
-  value: Value[]
+  values: Value[]
 }
 
 type Value = {

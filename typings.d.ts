@@ -5,7 +5,7 @@ export type SearchParams = {
   maxPrice?: string
 }
 
-export type pageResult = {
+export type PageResult = {
   content: Content
   created_at: string
   updated_at: string

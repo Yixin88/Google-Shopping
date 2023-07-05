@@ -19,7 +19,7 @@ const SORT_BY_MAP = {
 function Header() {
 
   const [pages, setPages] = useState("");
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState("r");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
 
@@ -71,7 +71,7 @@ function Header() {
             </Select>
 
             <SearchSelect onValueChange={value => setMinPrice(value)} className="min-w-4" placeholder="Min Price...">
-              {["", "100", "250", "500", "750", "900", "1000+"].map((val, i) => (
+              {["", "100", "250", "500", "750", "900", "1000"].map((val, i) => (
                 <SearchSelectItem key={i} value={val.toString()}>
                   {i === 0 ? "No Minimum" : `$${val.toString()}`}
                 </SearchSelectItem>

@@ -84,7 +84,6 @@ async function ProductPage({params: { id }}: ProductPageProps) {
                 <h3 className="font-bold text-2xl">Product Details</h3>
                 <p className="text-lg">
                   £{productData.content.pricing.online[0].price_total}{" "}
-                  {productData.content.pricing.online[0].currency}
                 </p>
 
                 <div className="flex space-x-4">

@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     method: 'POST',
     body: JSON.stringify({
       source: 'google_shopping_search',
-      domain: 'com',
+      domain: 'co.uk',
       query: searchTerm,
       pages: Number(pages) || 1,
       parse: true,

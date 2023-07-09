@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const SEARCHES = [
   {
     id: 1,
@@ -35,11 +37,22 @@ const SEARCHES = [
 export default function Home() {
   return (
     <div className="p-10 pt-0 text-center md:text-left">
-      <h1 className="text-3xl font-extralight mb-5">Home Page</h1>
-      <h2 className="mb-5">Categories</h2>
+      <h1 className="text-3xl font-extralight mb-5">Welcome to Google Shopping</h1>
+      <h2 className="mb-5">Try one of the examples below to get started!</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center gap-5 mt-5">
-
+        {
+          SEARCHES.map(search => (
+            <Link
+              prefetch={false}
+              key={search.id}
+              href={search.url}
+              className={`${search.color} w-full h-36 hover:opacity-50 text-white font-bold py-2 px-4 rounded transition duration-200`}
+            >
+              {search.term}
+            </Link>
+          ))
+        }
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import { getFetchUrl } from "@/lib/getFetchUrl";
 import { ProductData } from "@/typings";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const revalidate = 300;
@@ -10,6 +11,17 @@ type ProductPageProps = {
     id: string
   }
 }
+
+// export async function generateMetadata({params: {id}}: ProductPageProps): Promise<Metadata> {
+//   const response = await fetch(getFetchUrl(`api/shopping/product/${id}`));
+
+//   const productData = await response.json() as ProductData;
+
+//   return {
+//     title: productData.content.title,
+//     description: productData.content.title
+//   }
+// }
 
 async function ProductPage({params: { id }}: ProductPageProps) {
 

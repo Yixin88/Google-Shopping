@@ -73,7 +73,7 @@ function Header() {
             <SearchSelect onValueChange={value => setMinPrice(value)} className="min-w-4" placeholder="Min Price...">
               {["", "100", "250", "500", "750", "900", "1000"].map((val, i) => (
                 <SearchSelectItem key={i} value={val.toString()}>
-                  {i === 0 ? "No Minimum" : `$${val.toString()}`}
+                  {i === 0 ? "No Minimum" : `£${val.toString()}`}
                 </SearchSelectItem>
               ))}
             </SearchSelect>
@@ -81,7 +81,7 @@ function Header() {
             <SearchSelect onValueChange={value => setMaxPrice(value)} className="min-w-4" placeholder="Max Price...">
               {["", "100", "250", "500", "750", "900", "1000+"].map((val, i) => (
                 <SearchSelectItem key={i} value={val.toString()}>
-                  {i === 0 ? "No Maximum" : `$${val.toString()}`}
+                  {i === 0 ? "No Maximum" : `£${val.toString()}`}
                 </SearchSelectItem>
               ))}
             </SearchSelect>

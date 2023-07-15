@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'><img style="width:30%" src='https://links.papareact.com/208'/></div>
 
-## Getting Started
+<h2>About the project</h2>
 
-First, run the development server:
+  <p>A <b>Google Shopping</b> website which allows users to browse all their favorite product which been live scalped across all online store/ecommerce site just like google, with live prices, vendor, specification and many more, with unique filtering system for each searched product. Your one stop shopping site.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+👉 Live Demo Video: <a target='_blank' href='#'>Live Demo</a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>Build with:</h3>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+» Next Js 13 <br>
+» Typescript <br>
+» Tailwind <br>
+» Oxylabs Ecommerce Scrapper
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h3>Features:</h3>
 
-## Learn More
+» Responsive site for all devices <br>
+» Live prices and correct information for each product shown coming from vendor via Oxylab scrapper<br>
+» Local caching with 5 minutes revalidation for better user experience<br>
+» Item specific filtering sidebar, and general filter (min/max price, sort by ...) <br>
+» Routing with 404 handling page for unknown products <br>
+» Top reviews for each product from Google <br>
+» Lazy Skeleton loading <br>
+» Item specific product page with images and prices and many more <br>
+» Custom API route for security <br>
+» All reusable components <br>
 
-To learn more about Next.js, take a look at the following resources:
+<h2>Screenshots of the Project 📸</h2>
+<br>
+<h3 align='center'>Home Page 🏡</h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<div align='center'>
+<img src='https://github.com/Yixin88/Google-Shopping/blob/main/assets/sc1.png?raw=true'/>
+<img src='https://github.com/Yixin88/Google-Shopping/blob/main/assets/sc2.png?raw=true'/>
+<img src='https://github.com/Yixin88/Google-Shopping/blob/main/assets/sc3.png?raw=true'/>
+<img src='https://github.com/Yixin88/Google-Shopping/blob/main/assets/sc4.png?raw=true'/>
+<img src='https://github.com/Yixin88/Google-Shopping/blob/main/assets/sc5.png?raw=true'/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</div>

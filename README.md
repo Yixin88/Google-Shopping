@@ -1,4 +1,4 @@
-<div align='center'><img style="width:30%" src='https://links.papareact.com/208'/></div>
+<div align='center'><img style="width:30%" src='https://raw.githubusercontent.com/Yixin88/Google-Shopping/main/assets/google.png'/></div>
 
 <h2>About the project</h2>
 

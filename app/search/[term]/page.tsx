@@ -27,8 +27,6 @@ async function SearchPage({searchParams, params: {term}}: searchPageProps) {
 
   const results = await response.json() as PageResult[]
 
-  console.log(results)
-
   return (
     <div>
       <ResultsList results={results} term={term} />
